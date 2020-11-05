@@ -333,6 +333,7 @@ li {
     display: flex;
     flex-direction: row;
     transition: 0.3s ease-in-out;
+    margin: auto;
     .arrow {
         grid-row:2;
         width: 10px;
@@ -422,11 +423,11 @@ ul .market-item {
 }
 
 .id2 {
-    margin-left: 16%;
+    margin:auto;
 }
 
 .id3 {
-    margin-left: 16%;
+    margin: auto;
 }
 
 // THE END OF THE SECTION #3
