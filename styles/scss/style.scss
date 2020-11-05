@@ -84,6 +84,7 @@ li {
     grid-template-columns: 4.1em 4.1em 4.1em;
     grid-column-gap: 4.1em;
     padding-bottom: 0.31em;
+    text-align: center;
     li{
         padding-bottom: 0.38em;
     }
@@ -320,7 +321,7 @@ li {
     display:grid;
     grid-template-columns: 33% 33% 33%;
     margin-left: 150px;
-
+    margin-right: 50px !important;
     .enterprise {
         grid-column: 1;
     }
@@ -466,8 +467,6 @@ ul .market-item {
         cursor: pointer;
     }
 }
-
-
 
 .connect-form {
     margin-top: 154px;
