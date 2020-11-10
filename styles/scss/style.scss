@@ -4,9 +4,18 @@
         url('../../fonts/SofiaProUltraLight.woff2') format('woff2'),
         url('../../fonts/SofiaProUltraLight.woff') format('woff'),
         url('../../fonts/SofiaProUltraLight.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+    
   }
+
+// @font-face {
+//     font-family: 'Sofia Pro';
+//     src: local('Sofia Pro Regular'), local('Sofia-Pro-Regular'),
+//         url('SofiaProRegular.woff2') format('woff2'),
+//         url('SofiaProRegular.woff') format('woff'),
+//         url('SofiaProRegular.ttf') format('truetype');
+//     font-weight: 400;
+//     font-style: normal;
+//   }
 
   $font-pro: Sofia Pro;
   $font-alata: 'Alata', sans-serif;
@@ -97,11 +106,14 @@ li {
     width: 100%;
     height: auto;
     background: url("../../img/bgi.png") center center fixed;
+    background-attachment: inherit;
     background-size: 100% 100%;
 }
 
 .main-content {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-self: center;
     align-self: center;
     text-align: center;
@@ -114,18 +126,19 @@ li {
     }
     
     .contacts {
-        width: 12em;
-        height: 3em;
+        width: 196px;
+        height: 48px;
         background: #F9D023;
         border: none;
         font-family: $font-pro;
         font-size: 0.88em;
         font-weight: 600;
+        margin-bottom: 106px;
         transition: 0.3s ease-in-out;
     }
 
     .description {
-        width: 99%;
+        width: 60%;
         text-align: center;
         font-family: $font-pro;
         font-style: normal;
@@ -134,6 +147,7 @@ li {
         font-size: 1.5em;
         margin-top: 2.4em;
         margin-bottom: 3em;
+        line-height: 35px;
     }
 }
 
@@ -141,7 +155,6 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
     background: linear-gradient(360deg, #000000 4.66%, rgba(0, 0, 0, 0) 76.78%);
     .main-line{
         width: 2px;
@@ -203,6 +216,44 @@ li {
 
 }
 
+.tab-menu {
+    font-family: $font-pro;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    line-height: 14px;
+    position: fixed;
+    display:flex;
+    flex-direction: column;
+    left: 95%;
+    top: 50%;
+}
+
+
+
+.tab-text { 
+    padding: 25px;
+}
+
+.tabs-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+}
+
+.right-line {
+    width: 21px;
+    height: 5px;
+}
+
+.is-active {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+
 /* THE END IF THE FIRST SECTION */
 
 
@@ -236,7 +287,7 @@ li {
     border: none;
     background-color:#F6D330;
     grid-row:2;
-    margin-top: 17%;
+    margin-top: 50px;
     margin-left: 150px;
     margin-bottom: 55px;
 }
@@ -249,7 +300,6 @@ li {
         margin-left: 9.4em;
         margin-right: 68px;
         margin-bottom: 93px;
-        margin-top: 55px;
         height:20em; 
         width:28em;
     }
@@ -266,16 +316,16 @@ li {
 
     .textContent {
         font-family: $font-pro;
-        font-size: 22px;
+        font-size: 18px;
+        line-height: 26px;
         font-weight: 300;
         width: 80%;
-        margin-left: 50px;
     }
     
     @media (max-width: 1300px) {
         .textContent {
             font-family: $font-pro;
-            font-size: 22px;
+            font-size: 18px;
             font-weight: 300;
             width: 100%;
             margin-left: 150px;
@@ -333,7 +383,7 @@ li {
     display: flex;
     flex-direction: row;
     transition: 0.3s ease-in-out;
-    margin: auto;
+    padding-left: 15px;
     .arrow {
         grid-row:2;
         width: 10px;
@@ -355,16 +405,14 @@ li {
     }
 }
 
-
-
 ul.wholesale {
-    margin-left: auto;
     grid-row:1;
     grid-column: 2;
 }
 
+
+
 ul.Market {
-    margin-left: auto;
     grid-row:1;
     grid-column: 3;
 }
@@ -377,29 +425,48 @@ ul .strategies-title{
 }
 
 
-
 ul .enter-item {
-    list-style: square outside;
+    list-style: none;
+    margin-top: 33px;
+    font-family: Sofia Pro;
+    font-weight: 300;
+    font-size: 18px;
+    
+}
+
+ul .enter-item:before {
+    color:white;
+    content: url('/img/list.svg');
+    padding-right: 15px;
+}
+
+
+ul .whole-item {
+    list-style: none;
     margin-top: 33px;
     font-family: Sofia Pro;
     font-weight: 300;
     font-size: 18px;
 }
 
-ul .whole-item {
-    list-style: square outside;
-    margin-top: 33px;
-    font-family: Sofia Pro;
-    font-weight: 300;
-    font-size: 18px;
+ul .whole-item:before {
+    color:white;
+    content: url('/img/list.svg');
+    padding-right: 15px;
 }
 
 ul .market-item {
-    list-style: square outside;
+    list-style: none;
     margin-top: 33px;
     font-family: Sofia Pro;
     font-weight: 300;
     font-size: 18px;
+}
+
+ul .market-item:before {
+    color:white;
+    content: url('/img/list.svg');
+    padding-right: 15px;
 }
 
 .text_section3 {
@@ -496,7 +563,7 @@ ul .market-item {
         width:445px;
         height: 48px;
         margin-bottom: 15px;
-        padding-left: 2%;
+        padding-left: 20px;
         outline: none;
         border: none;
     }
@@ -511,8 +578,19 @@ ul .market-item {
     }
 }
 
+.lst-sect { 
+    grid-row: 2;
+    margin-top: 90px;
+    margin-left: 150px;
+    height: 3px;
+    border: none;
+    width: 100px;
+    background-color: #F6D330;
+}
+
 .last-line {
     width: 2px;
+    margin-top:70%;
     height: 101px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     background: #F6D330;
@@ -523,10 +601,13 @@ ul .market-item {
 
 /* Animations */
 
+.tab-menu:hover { 
+    cursor: pointer;
+}
+
 .mobile-items-about:hover, .mobile-items-service:hover, .mobile-items-contact:hover{
     cursor: pointer;
     transform: scale(1.1);
-    text-shadow: 0px 0px 10px black;
     border-bottom: 2px solid #F6D330;
     padding-bottom: 10px;
 }
@@ -542,7 +623,8 @@ ul .market-item {
     transform: scale(1.1);
 }
 
-.main-content .contacts:hover {
+
+.contacts:hover {
     cursor: pointer;
     box-shadow: 0px 0px 10px #F9D023;
     text-shadow: 0px 0px 10px black;
@@ -590,6 +672,9 @@ ul .market-item {
 @media (max-width:650px) {
     .container {
         width: 100%;
+        background: url('/img/mobile-background.png') center center fixed;
+        background-attachment: inherit;
+        background-size: 100% 100%;
     }
 
     .nav_bar {
@@ -624,6 +709,26 @@ ul .market-item {
 
         }
     }
+
+    .mobile-items-wrap { 
+        .contacts {
+            width: 196px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 48px;
+            background: #F9D023;
+            border: none;
+            font-family: $font-pro;
+            font-size: 0.88em;
+            font-weight: 600;
+            margin-bottom: 106px;
+            transition: 0.3s ease-in-out;
+        }
+    }
+
+    
 }
 
 
@@ -653,6 +758,9 @@ ul .market-item {
             display: block;
             width: 290px;
             .textContent {
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 24px;
                 margin-left: 15px;
                 margin-right: 15px;
                 margin-top: 30px;
@@ -683,9 +791,7 @@ ul .market-item {
         display:flex;
         flex-direction: column;
         font-size: 14px;
-        margin: auto;
         .enterprise {
-            margin:auto;
             padding: auto;
         }
     }
@@ -701,10 +807,6 @@ ul .market-item {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    .id{
-        margin-left: 70px;
     }
 
     .id2 {
@@ -746,7 +848,7 @@ ul .market-item {
         display: flex;
         flex-direction: column;
         font-size: 14px !important;
-        margin: auto;
+        margin-left: 0px;
         .enterprise {
             margin: 15px;
             padding: auto;
@@ -792,24 +894,16 @@ ul .market-item {
         align-items: flex-start;
     }
 
-    .id{
-        margin-left: 70px;
-    }
-
-    .id2 {
-        margin: auto;
-    }
-    
-    .id3 {
-        margin: auto;
-    }
-
    
 }
 
 
-// MEDIA for section #4
+// MEDIA for section #4 and tab_menu
 @media (max-width: 1260px){
+
+    .tab-menu { 
+        display:none;
+    }
 
     .container4 {
         height: fit-content;
@@ -900,11 +994,18 @@ ul .market-item {
             margin: auto;
         }
     }
+    
 }
 
 
 
-
+@media(max-width: 650px) { 
+    .lst-sect { 
+        margin-left: 15px;
+        margin-top: 36px;
+        margin-bottom: 23px;
+    }
+}
 
 
 
@@ -1032,11 +1133,6 @@ ul .market-item {
         height: 4px;
         margin-left: 15px;
     }
-
-    .img-info{
-        height: 180px;
-        width: 290px;
-    } 
     
 }
 
@@ -1070,7 +1166,6 @@ ul .market-item {
         display: flex;
         flex-direction: column;
         font-size: 14px !important;
-        margin: auto;
         .enterprise {
             margin: 15px;
             padding: auto;

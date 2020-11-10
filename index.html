@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <section class="container">
+    <section class="container sections"  id="Home">
         <nav class="nav_bar">
             <ul class="nav">
                 <li class='menu-items'><img src="img/Logo.svg" class='svg'></li>
@@ -36,6 +36,15 @@
         </footer>
     </section>
 
+    <aside class='tab-menu'>
+        <div class="tabs">
+            <div class="tabs-items is-active" id='Home'><p class='tab-text'>01 </p><img src="/img/menu-line.svg" class='right-line'> </div>
+            <div class="tabs-items" id='About'><p class='tab-text'>02 </p> <img src="/img/menu-line.svg" class='right-line'> </div>
+            <div class="tabs-items" id='Services'><p class='tab-text'>03 </p> <img src="/img/menu-line.svg" class='right-line'> </div>
+            <div class="tabs-items" id='Contacts'><p class='tab-text'>04 </p><img src="/img/menu-line.svg" class='right-line'> </div>
+        </div>
+    </aside>
+
     <section class='mobile-menu' style='display:none;'>
         <ul class="mobile-nav">
                 <!-- <img src="img/Logo.svg" class='mobile-svg'> -->
@@ -53,10 +62,11 @@
             <div class='mobile-items-about'>About</div>
             <div class='mobile-items-service'>Services</div>
             <div class='mobile-items-contact'>Contact</div>
+            <button class='contacts'><img src="img/connect.svg"></button>
         </div>
     </section>
 
-    <section class="container2">
+    <section class="container2 sections" id="About">
         <div class="about-wrapper">
             <h2 class='AboutUs'>About Us</h2>
         </div>
@@ -78,7 +88,7 @@
         </div>
     </section>
 
-    <section class='container3'>
+    <section class='container3 sections' id="Services">
         <div class="Services-wrapper">
             <h2 class='Services'>Services</h2>
         </div>
@@ -94,46 +104,46 @@
                 <li class='enter-item'>Customer engagement and retention</li>
                 <li class='enter-item'>Renewable, DER, and EV program structuring</li>
                 <li class='enter-item'>Reliability planning and reporting</li>
+                <div class="shapes id">
+                    <div class="tail"></div>
+                    <div class="arrow"></div>
+                </div>
             </ul>
-
-            <div class="shapes id">
-                <div class="tail"></div>
-                <div class="arrow"></div>
-            </div>
-        
 
             <ul class="wholesale"><p class="strategies-title">Wholesale Power</p>
                 <li class='whole-item'>Commodity advisory and RFPs</li>
                 <li class='whole-item'>Energy, capacity, REC, RIN, and LCFS placement</li>
                 <li class='whole-item'>Enterprise PPA structuring</li>
                 <li class='whole-item'>Contract extensions and re-packaging</li>
+                <div class="shapes id2">
+                    <div class="tail"></div>
+                    <div class="arrow"></div>
+                </div>
             </ul>
-            <div class="shapes id2">
-                <div class="tail"></div>
-                <div class="arrow"></div>
-            </div>
+            
 
             <ul class="Market"><p class="strategies-title">Market Development</p> 
                 <li class='market-item'>New venture setup</li>
                 <li class='market-item'>Demand planning and acquisition</li>
                 <li class='market-item'>Project development and regulatory support</li>
                 <li class='market-item'>Partnership structuring</li>
+                <div class="shapes id3">
+                    <div class="tail"></div>
+                    <div class="arrow"></div>
+                </div>
             </ul>
-            <div class="shapes id3">
-                <div class="tail"></div>
-                <div class="arrow"></div>
-            </div>
+            
             
         </div>
         <p class='text_section3 span-3'>Our clients are time constrained and under-resourced. Agendas shift, budgets move and priorities change. We understand. We are agile, creative and immediately responsive to your various working styles, governance requirements and evolving needs. </p>
 
     </section>
 
-    <section class="container4">
+    <section class="container4 sections" id="Contacts">
         <div class="connect-wrapper">
             <h2 class="connect">Contact</h2>
         </div>
-        <hr class="line">
+        <hr class="lst-sect">
         <p class="email">Email us here: <span class='link'>info@marvelpowergroup.com</span></p>
         <form action="" class='connect-form'>
             <p class="form">Stay in the loop by getting on our mailing list</p>
